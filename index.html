@@ -159,6 +159,8 @@
                 </div>
             </div>
 
+            <div class="divisor-vertical"></div>
+
             <div class="box-main">
                 <div class="titulo">
                     <div class="esquerdo1">
@@ -186,7 +188,77 @@
                         <div class="botao configureUIBB">Configure UIBB</div>
                         <div class="botao people"><i class="fa-solid fa-users-gear"></i></div>
                     </div>
+
                 </div>
+
+                <table class="tabelagrande">
+                    <thead>
+                        <tr>
+                            <th scope="col" id="teste"><i class="fa-regular fa-clone"></i></th>
+                            <th scope="col">Element</th>
+                            <th scope="col">Component</th>
+                            <th scope="col">Config ID</th>
+                            <th scope="col">Window Name</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <td id="cor"><i class="fa-solid fa-angle-down"></i><i
+                                    class="fa-solid fa-table-list"></i></i>Section: SECTION_1</td>
+                            <td id="cor"></td>
+                            <td id="cor"></td>
+                            <td id="cor"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td id="cor"><i class="fa-solid fa-table fa-rotate-270 fa-2xs"></i>UIBB: $OTR:/SCMTMS/UI_...
+                            </td>
+                            <td>FPM_FORM_UIBB_GL2</td>
+                            <td>/SCMTMS/WDCC_FWO_GEN</td>
+                            <td>FORM_WINDOW</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td id="cor"><i class="fa-solid fa-table fa-rotate-270 fa-2xs"></i>UIBB: $OTR:/SCMTMS/UI_...
+                            </td>
+                            <td>FPM_FORM_UIBB_GL2</td>
+                            <td>/SCMTMS/WDCC_CMN_ADMINDATA</td>
+                            <td>FORM_WINDOW</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td id="cor"><i class="fa-solid fa-table fa-rotate-270 fa-2xs"></i>UIBB: $OTR:/SCMTMS/UI_...
+                            </td>
+                            <td>FPM_TABBED_UIBB</td>
+                            <td>/SCMTMS/WDCC_TRQ_BUPA</td>
+                            <td>TABBED_WINDOW</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td id="cor"><i class="fa-solid fa-table fa-rotate-270 fa-2xs"></i>UIBB: $OTR:/SCMTMS/UI_...
+                            </td>
+                            <td>FPM_TREE_UIBB</td>
+                            <td>/SCMTMS/WDCC_DOC_FLOW</td>
+                            <td>TREE_WINDOW</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"></th>
+                            <td id="cor"><i class="fa-solid fa-table fa-rotate-270 fa-2xs"></i>UIBB: $OTR:/SCMTMS/UI_...
+                            </td>
+                            <td>FPM_TABBED_UIBB</td>
+                            <td>/SCMTMS/WDCC_TCM_CHARGED_TA</td>
+                            <td>TABBED_WINDOW</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
 
                 <div class="box-infos">
                     <div class="infos-head">
@@ -198,14 +270,122 @@
                         </div>
                     </div>
 
-                    <div class="box-input">
-                        
+                    <div class="box-input flex">
+                        <div class="esquerda2">
+                            <div class="input flex">
+                                <label>*Window Name:</label>
+                                <div class="input-box">
+                                    <input type="text" value="FORM_WINDOW">
+                                    <i id="paste-icon" class="fa-regular fa-copy"></i>
+                                </div>
+                            </div>
+
+                            <div class="input flex">
+                                <label>Config ID:</label>
+                                <div class="input-box">
+                                    <input type="text" value="/SCMTMS/WDCC_CMN_ADMINDATA">
+                                    <i id="paste-icon" class="fa-regular fa-copy"></i>
+                                </div>
+                            </div>
+
+                            <div class="input flex">
+                                <label>Instance ID:</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Column:</label>
+                                <input type="number" value="1">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Row Number:</label>
+                                <input type="number" value="4">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Sequence Index:</label>
+                                <input type="number" value="12032">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Default:</label>
+                                <input type="type">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Hidden Element:</label>
+                                <select>
+                                    <option value="visible">Visible</option>
+                                    <option value="hidden-execluded">Hidden and Excluded from Event Loop</option>
+                                    <option value="hidden-b-processed">Hidden but Processed in Event Loop (Technical)
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="direita2">
+                            <div class="input flex">
+                                <label>Title:</label>
+                                <input type="text" value="$OTR:SCMTMS/UI_CMN/ADM_INFO">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Image:</label>
+                                <div class="input-box">
+                                    <input type="text">
+                                    <i id="paste-icon" class="fa-regular fa-copy"></i>
+                                </div>
+                            </div>
+
+                            <div class="input flex">
+                                <label>Padding:</label>
+                                <select>
+                                    <option value="automatic">Automatic (Default)</option>
+                                </select>
+                            </div>
+
+                            <div class="input flex">
+                                <label>Style:</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Explanation Text:</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Explanation Document:</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input flex">
+                                <label>Default Edit Page:</label>
+                                <div class="input-box">
+                                    <input type="text">
+                                    <i id="paste-icon" class="fa-regular fa-copy"></i>
+                                </div>
+                            </div>
+
+                            <div class="input flex">
+                                <label>Default Details Page:</label>
+                                <div class="input-box">
+                                    <input type="text">
+                                    <i id="paste-icon" class="fa-regular fa-copy"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
     </main>
+
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
